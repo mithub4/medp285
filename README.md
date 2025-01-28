@@ -1,2 +1,2 @@
 # MEDP 285: Web Production I
-# Hunter College Spring 2025
+## Hunter College Spring 2025
