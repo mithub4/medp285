@@ -1,0 +1,121 @@
+/* html tag selector controlling body tag */
+
+body {
+    
+    background-color: #7c3539;
+
+    background-image: url("images/transredpear.png"); /* new */ 
+    background-blend-mode: multiply; /* new */ 
+
+    color: white;
+    margin: 0px;
+    padding: 7vw 10vw 7vw 10vw; /* top right bottom left */
+    
+    font-size: 1.5vw;
+    font-family: Lora, serif;
+
+}
+
+footer {
+    font-size: 1.5vw;
+    font-family: Helvetica, sans-serif;
+    margin-top: 100px;
+}
+
+header h1 {
+    color: white;
+    font-size: 5vw !important;
+    font-weight:700;
+    font-family: Helvetica, sans-serif;
+    margin: 3vw 0px 0px 0px;
+}
+
+body h1 {
+    color: white;
+    font-size: 2.5vw;
+    font-family: Helvetica, sans-serif;
+}
+
+main {
+    margin-top: 5vw;
+    padding: 4vw 4vw 4vw 4vw;
+    background-color: #f9f9f9;
+    color: black;
+    box-shadow: 1vw 1vw 20px #1f262a; /* new */
+
+}
+
+main a {
+    color: #d69fa2;
+}
+
+main a:hover {
+    text-decoration: none;
+    color: #a52a2a;
+}
+
+main h2 {
+    font-size: 2vw;
+    font-family: Helvetica, sans-serif;
+}
+
+
+header h2 {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    font-size: 1.5vw;
+    font-weight:100;
+    font-family: Helvetica, sans-serif;
+    margin: 1vw 0px 3vw 0px;
+}
+
+nav {
+    margin: 0px 0px 3vw 0px;
+}
+
+nav a {
+    font-weight: 700;
+    font-size: 1.75vw;
+    color: #d69fa2;
+    font-family: Helvetica, sans-serif;
+    margin: 0px 50px 7px 0px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.indexpics img {
+    width: 35vw;
+}
+
+.photogal {
+    margin-top: 5vw; /* new */ 
+    column-count: 3; /* new */ 
+}
+
+.photogal img {
+    width: 20vw;
+}
+
+header, nav {
+    text-align: center; /* new */ 
+}
+
+.heading {
+    background-color: #7c3539;
+    border: 1.25vw solid white; /* new */ 
+    border-bottom: 5vw solid white; /* new */ 
+}
+
+li {
+    list-style: none; /* new */ 
+    padding: 10px 30px;
+    background-image: url("images/transredpear.png");
+    background-repeat: no-repeat;
+    background-position: left center; /* new */ 
+    background-size: 2vw;
+    padding-left: 3vw;
+}
