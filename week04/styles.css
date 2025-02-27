@@ -1,0 +1,247 @@
+body {
+    background-color: rgb(68, 78, 255);
+    background-image: url(images/Tea_Matcha.jpg);
+
+    background-blend-mode: multiply; /* new */
+
+    padding: 2vw 20vw;
+
+    font-family: "Quattrocento", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+p {
+    font-family: "Quattrocento Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    color: white;
+    padding-top: 2vw;
+    font-size: 2vw;
+    /* background-color: rgb(0, 255, 217); */
+}
+
+.subheader {
+    color: white;
+    font-size: 1.5vw;
+    margin-top: -2vw;
+}
+
+nav {
+    background-color: #52ef7f;
+    border-radius: 1.5vw;
+    padding: 0.1vw;
+    text-align: center;
+    margin-bottom: 3vw;
+}
+
+nav a:hover {
+    color: #1c6730;
+    text-decoration: underline;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li {
+    display: inline;
+    margin: 0px 40px;
+    font-family: "Mansalva", serif;
+    font-size: 1.75vw;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer {
+    position: absolute;
+    padding-bottom: 5vw;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-family: "Mansalva", serif;
+    font-size: 1.25vw;
+    font-style: normal;
+}
+
+.index article {
+    /* border-radius: 2vw;
+    color: #3a7c9d;
+    background-color: #efefef;
+    padding: 10px 80px;
+    border: #9cd4fa solid 5px;
+    margin: 20px 0px; */
+
+    /* border-radius: 2vw;
+    color: #8f3367;
+    background-color: #fc97d5;
+    padding: 10px 80px;
+    border: #efefef solid 0.1vw;
+    margin-bottom: 2vw; */
+
+    font-size: 1vw;
+    border-radius: 2vw;
+    color: #efefef;
+    background-color: rgb(68, 78, 255);
+    padding: 1.5vw 4vw;
+    border: #efefef solid 0.1vw;
+    margin-bottom: 2vw;
+
+}
+
+.index article a {
+    color: white;
+    font-style: italic;
+}
+
+.index article a:hover {
+    color: rgb(241, 241, 106);
+    font-style: italic;
+}
+
+.about img {
+    width: 35vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1vw;
+    border: white solid 0.1vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+
+    color: white;
+    box-shadow: 0.25vw 0.5vw 1vw #8f3367;
+
+    transition: width 1s, height 1s;
+}
+
+.about img:hover{
+    width:36vw;
+    height:auto;
+}
+
+.about article {
+    font-size: 1vw;
+
+    /* border-radius: 2vw;
+    color: #3a7c9d;
+    background-color: #efefef;
+    padding: 10px 80px;
+    border: #9cd4fa solid 5px;
+    margin: 20px 0px; */
+
+    border-radius: 2vw;
+    color: #8f3367;
+    background-color: #fc97d5;
+    padding: 1.5vw 4vw;
+    border: #efefef solid 0.1vw;
+    margin-bottom: 2vw;
+
+}
+
+.about article a {
+    color: #8f3367;
+}
+
+.about article a:hover {
+    color: #1c6730;;
+    text-decoration: none;
+}
+
+.brands article {
+    font-size: 1vw;
+
+    /* border-radius: 2vw;
+    color: #3a7c9d;
+    background-color: #efefef;
+    padding: 10px 80px;
+    border: #9cd4fa solid 5px;
+    margin: 20px 0px; */
+
+    border-radius: 2vw;
+    color: #361d18;
+    background-color: #ffd34b;
+    padding: 1.5vw 4vw;
+    border: #efefef solid 0.1vw;
+    margin-bottom: 2vw;
+}
+
+.brands img {
+    width: 30vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1vw;
+    border: white solid 0.1vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+
+    color: white;
+    box-shadow: 0.25vw 0.5vw 1vw #361d18;
+    transition: width 1s, height 1s; /* NEW */
+
+}
+
+.brands img:hover{
+    width:31vw;
+    height:auto;
+}
+
+.brands article a {
+    color: #361d18;
+}
+
+.brands article a:hover {
+    /* color: #69bf64; */
+    color: #1c6730;
+}
+
+main {
+    margin-bottom: 4vw;
+}
+
+section h1 {
+    color: white;
+    font-size: 2.5vw;
+    margin: 0px;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+}
+
+.index img {
+    width: 50vw;
+    height: auto;
+
+    display: block; /* NEW: display: block */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1vw;
+    border: rgb(241, 241, 106) solid 0.1vw;
+    
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+
+    transition: width 1s, height 1s;
+}
+
+.index img:hover{
+    width:51vw;
+    height:auto;
+}
+
+.brands iframe {
+    display: block; /* NEW: display: block */
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 30vw;
+}
