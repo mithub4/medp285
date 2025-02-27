@@ -237,3 +237,11 @@ section h1 {
     width:51vw;
     height:auto;
 }
+
+.brands iframe {
+    display: block; /* NEW: display: block */
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 30vw;
+}
