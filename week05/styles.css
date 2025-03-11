@@ -1,0 +1,181 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+body {
+    /* background-color: rgb(31, 105, 105); */
+    background-color: black;
+    color: white;
+    margin: 5vw 10vw 10vw 10vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+body h2 {
+    font-size: 1.5vw;
+}
+
+body h3,
+p,
+li,
+footer {
+    font-size: 1vw;
+}
+
+.index h1 {
+    color: rgb(255, 87, 230);
+}
+
+.physical h2 {
+    color: rgb(141, 246, 55) !important;
+}
+
+.mental h2 {
+    color: rgb(200, 98, 255) !important;
+}
+
+.conclude h2 {
+    color: rgb(121, 224, 255) !important;
+}
+
+header {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 2vw !important;
+    font-family: "Orbitron", sans-serif !important;
+    font-optical-sizing: auto;
+}
+
+nav {
+    font-weight: bold;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 2vw;
+    padding: 0;
+}
+
+nav li {
+    background-color: rgb(217, 255, 49);
+    border-radius: 2vw;
+    display: inline-block;
+    font-size: 1vw;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    margin: 0px 2vw 0px 1vw;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: rgb(226, 130, 255);
+}
+
+main {
+
+    margin-top: 5vw;
+    width: 60%;
+    float: left;
+}
+
+main h1 {
+    font-size: 2vw;
+}
+
+.caption a {
+
+    text-align: right;
+    float: right;
+    color: rgb(217, 255, 49);
+    text-decoration: underline;
+    font-style: italic;
+}
+
+aside {
+    padding-top: 5vw;
+    padding-left: 5vw;
+    width: 40%;
+    float: left;
+}
+
+.general img {
+    border-radius: 3vw;
+    border-width: 0.35vw;
+    border-style: outset;
+    border-color: rgb(223, 236, 255);
+    width: 22.5vw;
+}
+
+aside article {
+    font-size: 0.75vw;
+    margin-right: 4vw;
+}
+
+footer {
+    font-weight: bold;
+    color: rgb(217, 255, 49);
+    text-align: center;
+    padding-top: 4vw;
+    clear: both;
+}
+
+.history h1 {
+    color: rgb(255, 87, 230);
+}
+
+.intro h2 {
+    color: rgb(141, 246, 55) !important;
+}
+
+.community h2 {
+    color: rgb(200, 98, 255) !important;
+}
+
+.art h2 {
+    color: rgb(121, 224, 255) !important;
+}
+
+.gallery {
+
+    font-size: 1vw;
+    margin-top: 5vw;
+    width: 50%;
+    float: left;
+
+}
+
+.gallery img {
+    width: 40vw;
+    border-radius: 2vw;
+}
+
+
+.moodboard {
+
+    font-size: 1vw;
+    padding-top: 5vw;
+    padding-left: 5vw;
+    width: 50%;
+    float: left;
+
+}
+
+.moodboard img {
+    width: 33vw;
+    border-radius: 2vw;
+}
+
+.moodboard article {
+    font-size: 1vw;
+}
