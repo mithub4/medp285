@@ -1,0 +1,183 @@
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: linear-gradient(#093c6b, #08335c, #162237, #060f0f, black);
+  background-attachment: fixed;
+  padding: 0px;
+  color: whitesmoke;
+}
+
+body p {
+  font-size: 1vw;
+  font-family: "Figtree", sans-serif;
+}
+
+/* Grouping example */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  /* text-transform: uppercase; */
+  margin: 0px;
+}
+
+h2 {
+  font-size: 1.5vw;
+}
+
+h3 {
+  font-size: 1.25vw;
+}
+
+.wrapper {
+  color: whitesmoke;
+  width: 80%;
+  margin: 0 auto;
+  /* grid layout parent */
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+/* padding on immediate children of wrapper */
+.wrapper>* {
+  padding: 20px;
+}
+
+header {
+  margin-top: 5vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2vw !important;
+  font-style: normal;
+  grid-column: 1/13;
+}
+
+main {
+  margin-right: 1vw;
+  grid-column: 4/10;
+  /* span 6 columns */
+}
+
+main h1 {
+  font-size: 1.25vw;
+}
+
+main a {
+  color: rgb(137, 178, 255);
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+main img {
+  margin: 2vw 0vw 2vw 0vw;
+  width: 35vw;
+}
+
+nav {
+  font-family: "Figtree", sans-serif;
+  /* span 3 columns */
+  grid-column: 1/4;
+}
+
+nav li {
+  font-size: 1.25vw;
+  margin-bottom: 2vw;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+aside {
+  /* background-color: black; */
+  font-size: 1vw;
+  font-family: "Figtree", sans-serif;
+  margin-right: -2vw;
+  /* span 3 columns */
+  grid-column: 10/13;
+}
+
+aside a {
+  color: rgb(137, 178, 255);
+  text-decoration: none;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
+
+aside img {
+  border-style: solid;
+  border-width: 0.1vw;
+  border-color: rgb(164, 173, 213);
+  border-radius: 1vw;
+  margin-top: 2vw;
+  width: 22vw;
+}
+
+
+nav,
+main,
+aside {
+  grid-row: 2/4;
+}
+
+
+
+footer {
+  margin-top: 20vw;
+  margin-bottom: 5vw;
+  grid-column: 1/13;
+  /* span all 12 columns */
+}
+
+footer a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.gallery_main {
+  margin-right: -15vw;
+}
+
+/* container */
+.two-columns-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* columns */
+.two-columns-grid>* {
+  padding: 1rem;
+}
+
+.two-columns-grid img {
+  width: 25vw;
+  border-radius: 1vw;
+}
