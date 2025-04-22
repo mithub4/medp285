@@ -1,0 +1,75 @@
+
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+
+h1 {
+	color: #3a241d;
+	text-align: center;
+}
+
+#left-container {
+	left: 0px;
+}
+
+#right-container {
+	right: 0px;
+}
+
+.container {
+	background-color: #eee;
+	width: 15%;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
+}
+
+.plant-holder {
+	position: relative;
+	height: 13%;
+	left: -10px;
+}
+
+.plant {
+	position: absolute;
+	max-width: 150%;
+	max-height: 150%;
+	z-index: 2;
+}
+
+.jar-walls {
+	height: 45vw;
+	width: 30%;
+	margin: auto;
+	background: #e683d0;
+	border-radius: 1rem;
+	position: absolute;
+	bottom: 3vw; 
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0.40;
+	z-index: 1;
+}
+
+.jungkook-pc {
+	height: 80%;
+	width: 40%;
+	margin: auto;
+	/* background: black; */
+	border-radius: 1rem;
+	position: absolute;
+	bottom: 3vw; /* moved up */
+	left: 50%;
+	transform: translateX(-50%);
+	/* opacity: 0.5; */
+	z-index: 1;
+}
+
+.jungkook-pc img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 77%;
+}
+
