@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>All About Mangoes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <script src="sketch-home.js"></script>
+
+    <header class="home-header">
+        <h1 id="mango-header">All About Mangoes</h1>
+    </header>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const header = document.getElementById("mango-header");
+            header.style.animation = "fadeInBounce 2s forwards";
+        });
+    </script>
+
+
+    <nav class="home-nav">
+        <a href="home.html" class="nav-button">Home</a>
+        <a href="about.html" class="nav-button">Mango Variety</a>
+        <a href="recipes.html" class="nav-button">Recipes</a>
+    </nav>
+
+    <section class="home-para">
+
+        <p>The world of mangoes is a vibrant tapestry of flavors, colors, and textures, offering a sensory journey from
+            the tropical orchards to the kitchen table. With hundreds of varieties grown across the globe, each mango
+            holds a unique story, making it one of the most beloved fruits worldwide, perfect for crafting everything
+            from refreshing smoothies to delicious salsas and tropical desserts.</p>
+
+    </section>
+
+    <footer class="home-footer">
+        <p>&copy; Michelle Lee 2025</p>
+    </footer>
+
+</body>
+
+</html>

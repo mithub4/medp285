@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mango Variety</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <script src="sketch-about.js"></script>
+
+        <header class="recipe-header">
+            <h1 id="recipe-title"></h1>
+        </header>
+
+        <script>
+            const text = "Mango Variety";
+            const title = document.getElementById("recipe-title");
+            let index = 0;
+
+            function typeWriter() {
+                if (index < text.length) {
+                    title.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, 150);
+                }
+            }
+            document.addEventListener("DOMContentLoaded", typeWriter);
+        </script>
+
+        <aside class="click-left"><a href="home.html">Home</a></aside>
+
+        <article class="type-list">
+
+            <div class="three-columns-grid">
+                <div class="column1">
+                    <article>
+
+                        <img src="images/afulto.png">
+
+                        <h3>Ataulfo</h3>
+
+                        <p> The 'Ataúlfo' mango is a mango cultivar from Mexico. Ataulfo mangos are golden yellow and
+                            generally weigh between 6 and 10 ounces (170 and 280 g), with a somewhat sigmoid (oblong)
+                            shape and a gold-yellow skin. The flesh is not Fibrous , and the pit is thin. They were
+                            named for grower Ataulfo Morales Gordillo. Since August 27, 2003, the Ataulfo mango is one
+                            of the 18 Mexican Designations of Origin. </p>
+                    </article>
+                    <article>
+
+                        <img src="images/haden.jpg">
+
+                        <h3>Haden</h3>
+
+                        <p> The 'Haden' mango is a historically important cultivar that played a key role in shaping
+                            global mango cultivation. Known for its vibrant red-yellow skin and sweet, aromatic flavor,
+                            it offers a juicy texture with subtle floral and spicy notes. Its enduring legacy continues
+                            through its influence on modern mango breeding and its popularity in both fresh and culinary
+                            uses.
+                        </p>
+                    </article>
+                    <article>
+
+                        <img src="images/kesar.jpg">
+
+                        <h3>Kesar</h3>
+
+                        <p> The Kesar mango was first cultivated in 1931 by Junagadh Wazir Sale Bhai and gained its name
+                            from the Nawab of Junagadh, inspired by its saffron-colored pulp. It is India’s second-most
+                            exported mango variety and is prized for its rich, sweet flavor. Though native to Gujarat,
+                            it also grows well in climates like South Florida.
+                        </p>
+                    </article>
+                </div>
+                <div class="column2">
+                    <article>
+                        <img src="images/alphonso.jpeg">
+
+                        <h3>Alphonso</h3>
+
+                        <p> The Alphonso mango is named after Afonso de Albuquerque, a Portuguese viceroy, and was
+                            developed through grafting techniques introduced by Jesuit missionaries in Goa. By the
+                            mid-1500s, Alphonsos were cultivated in Portuguese Bombay and presented to officials in Goa.
+                            Known for its rich flavor and smooth texture, it is one of the most expensive mango
+                            varieties and is primarily grown in the Konkan region and parts of South Gujarat.
+                        </p>
+                    </article>
+                    <article>
+                        <img src="images/imam.jpg">
+
+                        <h3>Imam Pasand</h3>
+
+                        <p> The Imam Pasand mango, primarily grown in Andhra Pradesh, Telangana, and Tamil Nadu, is
+                            celebrated for its rich flavor and royal heritage. Large and fiberless with juicy, sweet
+                            flesh, it offers complex notes of honey, citrus, and floral aromas. Often called the "King
+                            of Mangoes," it was once favored by Indian royalty and is available during the mid-season
+                            from late April to early June.
+                        </p>
+                    </article>
+                    <article>
+                        <img src="images/jakarsta.jpg">
+
+                        <h3>Jakarta</h3>
+
+                        <p> The Jakarta mango, developed in South Florida by Laurence Zill, is believed to be a hybrid
+                            of the 'Bombay' and 'Kent' varieties. It produces medium-to-large, fiberless fruit with a
+                            rich, sweet flavor and a distinctive resinous aroma. Though not widely commercialized, it
+                            remains a favorite among mango enthusiasts and is grown in Florida home gardens.
+                        </p>
+                    </article>
+
+                </div>
+                <div class="column3">
+                    <article>
+                        <img src="images/julie.jpg">
+
+                        <h3>Julie</h3>
+
+                        <p> The Julie mango, introduced to the U.S. in the 1910s by Lawrence Zill, originates from the
+                            West Indies, particularly Trinidad and Tobago. Known for its rich, sweet flavor and vibrant
+                            tropical aroma, it is a small to medium-sized fruit with a yellow-orange skin and deep
+                            orange, fiberless flesh. Its compact tree makes it ideal for home gardens, though it
+                            requires care to prevent fungal diseases like Anthracnose.
+
+                        </p>
+                    </article>
+
+                    <article>
+                        <img src="images/nam.jpg">
+
+                        <h3>Nam Doc Mai Mun</h3>
+
+                        <p> The DE Nam Dok Mai Mun is a new, highly sought-after variety of the Nam Dok Mai Mun family,
+                            originating in Thailand. It has an elongated shape with a pointed tip and wide shoulders,
+                            with large fruits weighing over 1500 grams, featuring a crunchy, fiberless texture and a
+                            distinct, sweet flavor. It is recommended to be eaten both when green or yellow-ripe.
+
+                        </p>
+                    </article>
+                    <article>
+                        <img src="images/francis.jpg">
+
+                        <h3>Francis</h3>
+
+                        <p>The Madame Francis Mango is a beloved dessert variety from Haiti, often considered the
+                            country's "de facto" mango, similar to Alphonso in India. It has a bright green and yellow
+                            skin, with a dark orange, fibrous flesh that is soft, juicy, and rich in sweet, spicy
+                            flavor. Known for ripening early in the season, it frequently produces multiple crops in
+                            Florida and tropical regions.
+
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+            <footer class="about-footer">
+                <p>&copy; Michelle Lee 2025</p>
+            </footer>
+
+        </article>
+
+        <aside class="click-right"><a href="recipes.html">Recipes</a></aside>
+    </div>
+
+</body>
+
+</html>

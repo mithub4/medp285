@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>About Mangoes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            // Set up the initial button text and hide content by default
+            $(".toggle-btn").text("Read More");
+
+            $(".toggle-btn").click(function () {
+                // Toggle the content visibility
+                $(this).closest("article").find("p").toggle();
+                $(this).closest("article").find("ul").toggle();
+                $(this).closest("article").find("ol").toggle();
+                $(this).closest("article").find("h3").toggle();
+                $(this).closest("article").find("a").toggle();
+
+                let button = $(this); // Store the button element
+                // Toggle the button text
+                if (button.text() === "Read More") {
+                    button.text("Read Less"); // Change text to "Read Less"
+                } else {
+                    button.text("Read More"); // Change text back to "Read More"
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <script src="sketch-recipes.js"></script>
+
+        <header class="recipe-header">
+            <h1 id="recipe-title"></h1>
+        </header>
+
+        <script>
+            const text = "Mango Recipes";
+            const title = document.getElementById("recipe-title");
+            let index = 0;
+
+            function typeWriter() {
+                if (index < text.length) {
+                    title.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, 150); // adjust typing speed here
+                }
+            }
+            document.addEventListener("DOMContentLoaded", typeWriter);
+        </script>
+
+        <aside class="click-left"><a href=" about.html"> Mango Variety</a></aside>
+
+        <article class="recipe-list">
+
+            <section class="recipe1">
+                <h1>Fresh Mango Salsa</h1>
+
+                <img src="images/mangosalsa.jpg">
+
+                <p>A Fresh Mango Salsa recipe that's so good it's the first salsa to run out. It's easy to make and made
+                    with simple and natural ingredients so you can feel good about eating it. When in season, go for the
+                    mangos and stay fresh! Variations are provided in the recipe notes for best taste and texture.</p>
+
+                <article>
+                    <button class="toggle-btn">Read More</button>
+
+                    <p>
+                    <ul>
+                        <h3>Ingredients:</h3>
+                        <li>2 mangoes, diced and skin removed</li>
+                        <li>1 cucumber, cored and diced (or substitute with red bell pepper)</li>
+                        <li>1/2 red onion, diced</li>
+                        <li>3 Roma tomatoes, cored and diced</li>
+                        <li>Juice of 2–3 limes</li>
+                        <li>Salt to taste</li>
+                        <li>Optional: cilantro and/or serrano peppers</li>
+                    </ul>
+
+                    <ol>
+                        <h3>Instructions:</h3>
+                        <li>Chop or dice all ingredients as recommended.</li>
+                        <li>Combine all ingredients in a large bowl and mix by folding over ingredients [avoid mashing],
+                            and do not over mix. Add salt to taste.</li>
+                    </ol>
+
+                    <a href="https://www.latinasquecomen.com/fresh-mango-salsa-recipe/" target="none">View complete
+                        recipe instructions on LatinasQueComen! </a>
+
+                    </p>
+                </article>
+            </section>
+
+            <section class="recipe2">
+                <h1>Mango Sticky Rice</h1>
+
+                <img src="images/rainbow-mango-sticky-rice-sq.jpg">
+
+                <p>Mango sticky rice is the most famous Thai dessert, and for good reason! If you never thought fruit
+                    and rice would go together, this will blow your mind. Sweet sticky rice pairs unexpectedly well with
+                    sweet and juicy fresh mangoes. It's loved the world over, and is arguably the Thai national dessert.
+                </p>
+
+                <article>
+                    <button class="toggle-btn">Read More</button>
+
+                    <p>
+                    <ul>
+                        <h3>Ingredients:</h3>
+                        <li>1 cup white glutinous rice, see notes 1 and 2</li>
+                        <li>⅔ cup coconut milk</li>
+                        <li>½ teaspoon table salt</li>
+                        <li>½ cup sugar</li>
+                        <li>½ cup coconut milk</li>
+                        <li>¼ teaspoon table salt</li>
+                        <li>1 teaspoon rice flour</li>
+                        <li>1 Tablespoon water</li>
+                        <li>2 Tablespoons shelled and split mung beans</li>
+                        <li>3 sweet, ripe mangoes</li>
+                    </ul>
+
+                    <ol>
+                        <h3>Instructions:</h3>
+
+                        <li>If you want to make colourful rice, first prepare the soaking water using instructions in
+                            the blog post above.</li>
+                        <li>Wash the rice by placing it in a mixing bowl and covering it with cold water. Vigorously
+                            swish the rice with your hand to release loose starch. Pour off the cloudy water and repeat
+                            the process 4 more times or until the water runs mostly clear.</li>
+                        <li>Soak the rice with room temperature water for at least 4 hours and up to overnight. If
+                            you're using naturally dyed water to soak the rice, refrigerate the rice after 4 hours of
+                            soaking if you're not yet ready to steam.</li>
+                        <li>While the rice is soaking, make the salted coconut sauce and the crispy mung beans (below).
+                        </li>
+                        <li>Drain the rice very well, shaking off excess water in a sieve until there is no more
+                            dripping. Line a steamer rack with moist muslin (not soaking wet!) or a thin white tea towel
+                            and place the rice on the cloth. Fold the edges of the cloth over the rice, making sure the
+                            rice doesn't cover the entire rack—there should be space around the rice to allow steam to
+                            come up.</li>
+                        <li>While the rice is cooking, make the coconut syrup. Combine the coconut milk, sugar, and salt
+                            in a small pot. If you have a pandan leaf handy, tie it into a knot and throw it in for
+                            extra aroma. Cook it over medium heat, and as soon as it starts to bubble, turn off the heat
+                            and cover. You will need to reheat this once the rice is ready.</li>
+                        <li>Few minutes before the rice is done, reheat the syrup so it is steaming hot then keep
+                            covered. When the rice is done, immediately place the rice into a mixing bowl and pour the
+                            syrup over the rice. Stir to break up any lumps, then cover with a lid, a plate, or aluminum
+                            foil and let sit for 20 minutes.</li>
+                        <li>After 20 minutes, use a rubber spatula to fold the bottom part of the rice up to the top to
+                            help redistribute the syrup, and let sit for at least another 20 minutes or until ready to
+                            serve. At this stage, the rice will keep at room temp all day.</li>
+
+                        <li>Stir the rice flour into the water until there are no more lumps.</li>
+                        <li>Combine the rice flour slurry, coconut milk, and salt in a small pot. Cook over medium-high
+                            heat, stirring constantly, until the mixture comes to a boil.</li>
+                        <li>Remove from heat and pour into a bowl. Let cool completely before serving.</li>
+                        <li>Rinse the beans in cold water and add them to a small pot. Cover with about 2 cups of water.
+                        </li>
+                        <li>Over medium heat, bring the water to a simmer. Once simmering, immediately remove from the
+                            heat and cover the pot for 10 minutes ONLY. Do not over-soak.</li>
+                        <li>Drain off the cooking water and rinse the beans in cold water. Lay the beans on a paper
+                            towel to dry.</li>
+                        <li>In a lightly greased sauté pan, toast the beans over medium-high heat, stirring frequently
+                            until the beans are dry, crunchy, and start developing a light golden colour.</li>
+                        <li>Let cool on a plate. This can be kept in an airtight container for up to 1 month.</li>
+
+                    </ol>
+
+                    <a href="https://hot-thai-kitchen.com/mango-sticky-rice/" target="none">View complete
+                        recipe instructions on Hot Thai Kitchen! </a>
+
+                    </p>
+                </article>
+            </section>
+
+            <section class="recipe3">
+
+                <h1>Mango Chutney</h1>
+
+                <img src="images/chutney.jpg">
+
+                <p>One of the better things about the scorching Indian summer season is that it is blessed with the
+                    ‘king of fruits,’ a.k.a mango. Apart from enjoying raw mango with black salt or red chili powder,
+                    this Mango Chutney is another way to relish this seasonal fruit, a favorite amongst all ages. This
+                    is a quick, vegan Bengali style Mango Chutney recipe with a distinct taste.</p>
+
+                <article>
+                    <button class="toggle-btn">Read More</button>
+
+                    <p>
+                    <ul>
+                        <h3>Ingredients:</h3>
+                        <li>2 mangoes – semi ripe and juicy, medium-sized</li>
+                        <li>½ teaspoon Panch Phoron or equal mix of cumin seeds, fennel seeds, mustard seeds/carom
+                            seeds/radhuni seeds (wild celery seeds), nigella seeds/onion seeds and fenugreek seeds</li>
+                        <li>2 tablespoons powdered jaggery or as required – adjust as per the sweetness of the mangoes
+                        </li>
+                        <li>1 tablespoon peanut oil or any neutral oil</li>
+                        <li>½ to 1 inch ginger – grated or finely chopped</li>
+                        <li>¼ teaspoon red chili powder or cayenne pepper or paprika</li>
+                        <li>1 pinch Garam Masala</li>
+                        <li>1 pinch asafoetida (hing) – optional</li>
+                        <li>Salt as required</li>
+                    </ul>
+
+                    <ol>
+                        <h3>Instructions:</h3>
+                        <li>Rinse the mangoes a few times in water. Wipe dry with a kitchen towel. Peel and finely chop
+                            them. Set aside. Note that if the mangoes are very juicy and fibrous, you can just remove
+                            the pulp.</li>
+                        <li>Heat oil in a small to medium-sized frying pan or skillet. Keep heat to a low. Add the panch
+                            phoron spices and stir. Let them splutter and crackle but make sure they do not get burnt.
+                        </li>
+                        <li>Now, add the ginger and fry for a few seconds till its raw aroma goes away.</li>
+                        <li>Add the finely chopped mango or mango pulp/puree.</li>
+                        <li>Add the red chili powder, garam masala powder, and asafoetida. Stir and mix.</li>
+                        <li>Simmer for 1 to 2 minutes. Add the powdered jaggery or sugar, salt. Mix and cook for 2 to 3
+                            minutes.</li>
+                        <li>Don't overcook as the mixture will become thick.</li>
+                        <li>Remove the chutney in a bowl. Serve Mango Chutney warm or at room temperature as dip or
+                            spread.</li>
+                    </ol>
+
+                    <a href="https://www.vegrecipesofindia.com/mango-chutney/" target="none">View complete
+                        recipe instructions on Dassana's Veg Recipes! </a>
+
+                    </p>
+
+                </article>
+
+            </section>
+
+        </article>
+
+        <aside class="click-right"><a href="home.html">Home</a></aside>
+
+    </div>
+
+
+    <footer class="general-footer">
+        <p>&copy; Michelle Lee 2025</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+body {
+    background-color: #ffd65a;
+    color: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.25vw;
+}
+
+
+.home-header {
+    margin-top: 18vw;
+}
+
+.recipe-header {
+    margin-top: 5vw;
+    color: #ffd65a
+}
+
+.home-header,
+.recipe-header {
+    font-size: 1.25vw;
+    font-family: "Coustard", serif !important;
+    font-style: normal;
+    text-align: center;
+}
+
+.three-columns-grid {
+
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 10vw;
+}
+
+/* columns */
+.three-columns-grid>* {
+    padding: 1rem;
+}
+
+.three-columns-grid article {
+    background-color: rgb(255, 250, 212);
+    padding: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 2vw;
+    border-style: inset;
+    border-color: rgb(213, 189, 105);
+}
+
+.three-columns-grid article p {
+    font-size: 1vw;
+}
+
+.type-list {
+    margin-top: 2vw;
+    margin-left: -10vw;
+    margin-right: -10vw;
+}
+
+.type-list img {
+    border-style: inset;
+    border-color: rgb(213, 189, 105);
+    border-radius: 2vw;
+    width: 15vw;
+    display: block;
+    margin: 0 auto;
+}
+
+.click-right {
+    text-align: right;
+}
+
+.click-left {
+    text-align: left;
+}
+
+.recipe-header {
+    background-color: tomato;
+    border-style: inset;
+    border-color: rgb(230, 94, 70);
+    border-radius: 4vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+.recipe-list {
+    margin-top: 2vw;
+}
+
+.recipe-list article {
+    background-color: rgb(255, 250, 212);
+
+}
+
+.recipe-list section {
+
+    border-radius: 2.5vw;
+    background-color: rgb(255, 250, 212);
+    padding: 5vw 7vw 5vw 7vw;
+    margin-bottom: 2vw;
+    border-style: inset;
+    border-color: rgb(230, 94, 70);;
+}
+
+.recipe-list img {
+    width: 30vw;
+    margin-top: 2vw;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2vw;
+    border-style: inset;
+    border-color: rgb(246, 239, 185);
+}
+
+.recipe-list article p,
+article ul,
+article ol,
+article a,
+.recipe-list article h3 {
+    display: none;
+}
+
+.recipe-list li {
+    padding-bottom: 1vw;
+}
+
+.recipe-list h1 {
+    font-size: 2vw;
+    font-family: "Coustard", serif !important;
+}
+
+.click-right a {
+    text-decoration: none;
+    background-color: #ffca2b;
+    color: green;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 0.5vw 0.5vw rgba(88, 58, 0, 0.377);
+}
+
+.click-left a {
+    text-decoration: none;
+    background-color: #ffca2b;
+    color: green;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 0.5vw 0.5vw rgba(88, 58, 0, 0.377);
+}
+
+.click-left a:hover {
+    background-color: #eeb815;
+    color: green;
+}
+
+.click-right a:hover {
+    background-color: #eeb815;
+    color: green;
+}
+
+
+/* HTML content */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+/* Make the canvas stay in the background */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.home-para {
+    padding-top: 2.25vw;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+nav {
+    margin-top: 3vw;
+    font-size: 1.25vw;
+    text-align: center;
+    list-style-type: none;
+}
+
+.home-nav a {
+    color: green;
+}
+
+.nav-button {
+    text-decoration: none;
+    background-color: #ffca2b;
+    color: #333;
+    padding: 1vw 2vw;
+    border-radius: 2vw;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 0.5vw 0.5vw rgba(88, 58, 0, 0.377);
+}
+
+.nav-button:hover {
+    background-color: #eeb815;
+    color: green;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    gap: 1vw;
+}
+
+.wrapper>* {
+    padding: 1vw;
+}
+
+.recipe-header {
+    background: tomato;
+    flex: 1 100%;
+}
+
+.click-left,
+.click-right {
+    /* background: gold; or hotpink for right */
+    flex: 1;
+}
+
+.recipe-list {
+    text-align: left;
+    flex: 3;
+}
+
+.recipe-list button {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1vw;
+    border-color: rgb(230, 94, 70);;
+    color: rgb(255, 250, 212);
+    border-radius: 1vw;
+    padding: 0.5vw;
+    background-color: tomato;
+}
+
+.recipe-list a {
+    color: tomato;
+}
+
+.type-list {
+    text-align: left;
+    flex: 3;
+}
+
+.type-list h3 {
+    font-family: "Coustard", serif;
+    text-align: left;
+    flex: 3;
+}
+
+@media all and (min-width: 800px) {
+    .click-left {
+        order: 1;
+    }
+
+    .recipe-list {
+        order: 2;
+    }
+
+    .type-list {
+        order: 2;
+    }
+
+    .click-right {
+        order: 3;
+    }
+}
+
+#home-header {
+    opacity: 0;
+    transform: translateY(30px); 
+    animation: fadeInBounce 2s forwards;
+}
+
+@keyframes fadeInBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-footer {
+    color: rgb(255, 250, 212);
+    text-align: center;
+    border-radius: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    margin-left : 25vw;
+    margin-right : 25vw;
+    margin-bottom: 5vw;
+    background-color: tomato;
+    font-size: 1vw;
+}
+
+
+.general-footer {
+    color: rgb(255, 250, 212);
+    text-align: center;
+    border-radius: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    
+    margin-top: 10vw;
+    margin-left : 41vw;
+    margin-right : 41vw;
+    margin-bottom: 7vw;
+    background-color: tomato;
+    font-size: 1vw;
+}
+
+.home-footer {
+    color: green;
+    text-align: center;
+    border-radius: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    background-color: rgb(255, 250, 212);
+    margin-top: 12vw;
+    margin-left : 41vw;
+    margin-right : 41vw;
+    font-size: 1vw;
+}
+
+
